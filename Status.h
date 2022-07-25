@@ -99,21 +99,23 @@ namespace WinGame {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->label1->Location = System::Drawing::Point(12, 9);
+			this->label1->Location = System::Drawing::Point(18, 14);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(109, 37);
+			this->label1->Size = System::Drawing::Size(163, 55);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Score:";
 			// 
 			// Score
 			// 
-			this->Score->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->Score->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->Score->Location = System::Drawing::Point(127, 9);
+			this->Score->Location = System::Drawing::Point(190, 14);
+			this->Score->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->Score->Name = L"Score";
-			this->Score->Size = System::Drawing::Size(145, 37);
+			this->Score->Size = System::Drawing::Size(218, 57);
 			this->Score->TabIndex = 1;
 			this->Score->Text = L"0";
 			this->Score->TextAlign = System::Drawing::ContentAlignment::TopRight;
@@ -121,18 +123,21 @@ namespace WinGame {
 			// LevelList
 			// 
 			this->LevelList->FormattingEnabled = true;
-			this->LevelList->Location = System::Drawing::Point(12, 49);
+			this->LevelList->ItemHeight = 20;
+			this->LevelList->Location = System::Drawing::Point(18, 75);
+			this->LevelList->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->LevelList->Name = L"LevelList";
-			this->LevelList->Size = System::Drawing::Size(109, 199);
+			this->LevelList->Size = System::Drawing::Size(162, 304);
 			this->LevelList->TabIndex = 2;
 			this->LevelList->SelectedIndexChanged += gcnew System::EventHandler(this, &Status::LevelList_SelectedIndexChanged);
 			// 
 			// Lives
 			// 
 			this->Lives->AutoSize = true;
-			this->Lives->Location = System::Drawing::Point(131, 49);
+			this->Lives->Location = System::Drawing::Point(196, 75);
+			this->Lives->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->Lives->Name = L"Lives";
-			this->Lives->Size = System::Drawing::Size(32, 13);
+			this->Lives->Size = System::Drawing::Size(45, 20);
 			this->Lives->TabIndex = 3;
 			this->Lives->Text = L"Lives";
 			// 
@@ -145,29 +150,32 @@ namespace WinGame {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(131, 209);
+			this->label2->Location = System::Drawing::Point(196, 322);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(142, 26);
+			this->label2->Size = System::Drawing::Size(205, 40);
 			this->label2->TabIndex = 4;
 			this->label2->Text = L"Programmed by:\r\nTomáš \"Frooxius\" Marianèík";
 			// 
 			// linkLabel1
 			// 
 			this->linkLabel1->AutoSize = true;
-			this->linkLabel1->Location = System::Drawing::Point(131, 235);
+			this->linkLabel1->Location = System::Drawing::Point(196, 362);
+			this->linkLabel1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->linkLabel1->Name = L"linkLabel1";
-			this->linkLabel1->Size = System::Drawing::Size(126, 13);
+			this->linkLabel1->Size = System::Drawing::Size(157, 20);
 			this->linkLabel1->TabIndex = 5;
 			this->linkLabel1->TabStop = true;
-			this->linkLabel1->Text = L"www.wingame.solirax.org";
+			this->linkLabel1->Text = L"patreon.com/frooxius";
 			this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &Status::linkLabel1_LinkClicked);
 			// 
 			// BonusStatus
 			// 
 			this->BonusStatus->AutoSize = true;
-			this->BonusStatus->Location = System::Drawing::Point(134, 86);
+			this->BonusStatus->Location = System::Drawing::Point(201, 132);
+			this->BonusStatus->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->BonusStatus->Name = L"BonusStatus";
-			this->BonusStatus->Size = System::Drawing::Size(56, 17);
+			this->BonusStatus->Size = System::Drawing::Size(81, 24);
 			this->BonusStatus->TabIndex = 6;
 			this->BonusStatus->Text = L"Bonus";
 			this->BonusStatus->UseVisualStyleBackColor = true;
@@ -175,33 +183,36 @@ namespace WinGame {
 			// BonusHint
 			// 
 			this->BonusHint->AutoSize = true;
-			this->BonusHint->Location = System::Drawing::Point(182, 87);
+			this->BonusHint->Location = System::Drawing::Point(273, 134);
+			this->BonusHint->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->BonusHint->Name = L"BonusHint";
-			this->BonusHint->Size = System::Drawing::Size(65, 13);
+			this->BonusHint->Size = System::Drawing::Size(96, 20);
 			this->BonusHint->TabIndex = 7;
 			this->BonusHint->Text = L"(Click to fire)";
 			// 
 			// LevelProgress
 			// 
-			this->LevelProgress->Location = System::Drawing::Point(134, 122);
+			this->LevelProgress->Location = System::Drawing::Point(201, 188);
+			this->LevelProgress->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->LevelProgress->Name = L"LevelProgress";
-			this->LevelProgress->Size = System::Drawing::Size(138, 15);
+			this->LevelProgress->Size = System::Drawing::Size(207, 23);
 			this->LevelProgress->TabIndex = 8;
 			// 
 			// BricksStatus
 			// 
 			this->BricksStatus->AutoSize = true;
-			this->BricksStatus->Location = System::Drawing::Point(131, 106);
+			this->BricksStatus->Location = System::Drawing::Point(196, 163);
+			this->BricksStatus->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->BricksStatus->Name = L"BricksStatus";
-			this->BricksStatus->Size = System::Drawing::Size(55, 13);
+			this->BricksStatus->Size = System::Drawing::Size(82, 20);
 			this->BricksStatus->TabIndex = 9;
 			this->BricksStatus->Text = L"Destroyed";
 			// 
 			// Status
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 262);
+			this->ClientSize = System::Drawing::Size(426, 403);
 			this->ControlBox = false;
 			this->Controls->Add(this->BricksStatus);
 			this->Controls->Add(this->LevelProgress);
@@ -215,14 +226,15 @@ namespace WinGame {
 			this->Controls->Add(this->label1);
 			this->Cursor = System::Windows::Forms::Cursors::Default;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
 			this->Name = L"Status";
 			this->ShowInTaskbar = false;
 			this->Text = L"Status";
 			this->Load += gcnew System::EventHandler(this, &Status::Status_Load);
-			this->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &Status::Status_MouseUp);
 			this->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &Status::Status_MouseDown);
+			this->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &Status::Status_MouseUp);
 			this->Move += gcnew System::EventHandler(this, &Status::Status_Move);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -273,7 +285,7 @@ private: System::Void PosAnim_Tick(System::Object^  sender, System::EventArgs^  
 				LevelList->SelectedIndex = level;
 		 }
 private: System::Void linkLabel1_LinkClicked(System::Object^  sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^  e) {
-			 System::Diagnostics::Process::Start("www.wingame.solirax.org");
+			 System::Diagnostics::Process::Start("patreon.com/frooxius");
 		 }
 private: System::Void Status_Move(System::Object^  sender, System::EventArgs^  e) {
 		 }
