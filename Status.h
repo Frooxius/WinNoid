@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 #include "Levels.h"
 #include "SharedVariables.h"
 #include <cmath>
@@ -155,7 +155,7 @@ namespace WinGame {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(205, 40);
 			this->label2->TabIndex = 4;
-			this->label2->Text = L"Programmed by:\r\nTom·ö \"Frooxius\" MarianËÌk";
+			this->label2->Text = L"Programmed by:\r\nTom√°≈° \"Frooxius\" Marianƒç√≠k";
 			// 
 			// linkLabel1
 			// 
